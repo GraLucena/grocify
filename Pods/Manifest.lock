@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (4.7.2)
+  - Gloss (2.0.0)
+  - HexColors (6.0.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - Gloss
+  - HexColors
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Gloss: b67617f327406adfd47adf20172d00680a3a31bd
+  HexColors: f8c66339541a74bb08905bfe7cd4f8cc85e9e173
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 9bcdf5738ff36b382df986809d613a93f1680da8
+
+COCOAPODS: 1.4.0

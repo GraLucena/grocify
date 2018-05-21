@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C730F4720A8587500C72A9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C730F4620A8587500C72A9D /* AppDelegate.swift */; };
+		3C730F4C20A8587500C72A9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C730F4A20A8587500C72A9D /* Main.storyboard */; };
+		3C730F4E20A8587800C72A9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C730F4D20A8587800C72A9D /* Assets.xcassets */; };
+		3C730F5120A8587800C72A9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C730F4F20A8587800C72A9D /* LaunchScreen.storyboard */; };
+		3C730F5A20A8592900C72A9D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C730F5920A8592900C72A9D /* AppCoordinator.swift */; };
+		3C730F5C20A859BF00C72A9D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C730F5B20A859BF00C72A9D /* Coordinator.swift */; };
+		3C730F5E20A85A2100C72A9D /* ProductsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C730F5D20A85A2100C72A9D /* ProductsCoordinator.swift */; };
+		3C730F6020A85A3200C72A9D /* RecipesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C730F5F20A85A3200C72A9D /* RecipesCoordinator.swift */; };
+		3C730F6320A85A4600C72A9D /* PreferencesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C730F6220A85A4600C72A9D /* PreferencesCoordinator.swift */; };
+		3C730F6520A85A5C00C72A9D /* PurchasesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C730F6420A85A5C00C72A9D /* PurchasesCoordinator.swift */; };
+		3C730F6720A85B0600C72A9D /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C730F6620A85B0600C72A9D /* HomeCoordinator.swift */; };
+		3C730F6920A85B3600C72A9D /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C730F6820A85B3600C72A9D /* Asset.swift */; };
+		3C730F6D20A85C2900C72A9D /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C730F6B20A85C2900C72A9D /* ProductsViewController.swift */; };
+		3C730F6E20A85C2A00C72A9D /* ProductsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C730F6C20A85C2900C72A9D /* ProductsViewController.xib */; };
+		3C730F7020A85DA000C72A9D /* LocalizableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C730F6F20A85DA000C72A9D /* LocalizableString.swift */; };
+		3C730F7320A85F4B00C72A9D /* PurchasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C730F7120A85F4B00C72A9D /* PurchasesViewController.swift */; };
+		3C730F7420A85F4B00C72A9D /* PurchasesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C730F7220A85F4B00C72A9D /* PurchasesViewController.xib */; };
+		3C730F7720A85F5E00C72A9D /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C730F7520A85F5E00C72A9D /* PreferencesViewController.swift */; };
+		3C730F7820A85F5E00C72A9D /* PreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C730F7620A85F5E00C72A9D /* PreferencesViewController.xib */; };
+		3C730F7B20A85F6B00C72A9D /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C730F7920A85F6B00C72A9D /* RecipesViewController.swift */; };
+		3C730F7C20A85F6B00C72A9D /* RecipesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C730F7A20A85F6B00C72A9D /* RecipesViewController.xib */; };
+		3C730F7E20A8649200C72A9D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C730F7D20A8649200C72A9D /* Colors.swift */; };
+		3C730F8720A8670E00C72A9D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C730F8620A8670E00C72A9D /* Fonts.swift */; };
+		3CC524C120A87AC200E0A0B2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC524C020A87AC200E0A0B2 /* Router.swift */; };
+		3CC524C520A87DE800E0A0B2 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC524C420A87DE800E0A0B2 /* Product.swift */; };
+		3CC524C720A8806E00E0A0B2 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC524C620A8806E00E0A0B2 /* Recipe.swift */; };
+		3CC524C920A8828100E0A0B2 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC524C820A8828100E0A0B2 /* Market.swift */; };
+		3CC524CB20A882DF00E0A0B2 /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC524CA20A882DF00E0A0B2 /* Purchase.swift */; };
+		3CC524CD20A8861A00E0A0B2 /* ShopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC524CC20A8861A00E0A0B2 /* ShopList.swift */; };
+		3CC524CF20A887F000E0A0B2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC524CE20A887F000E0A0B2 /* Card.swift */; };
+		6FB3A17C20B180EE009FDF40 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB3A17A20B180EE009FDF40 /* ProductTableViewCell.swift */; };
+		6FB3A17D20B180EE009FDF40 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FB3A17B20B180EE009FDF40 /* ProductTableViewCell.xib */; };
+		6FB3A18120B1BACD009FDF40 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB3A18020B1BACD009FDF40 /* ProductsViewModel.swift */; };
+		6FB3A18320B1C32E009FDF40 /* ProductsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB3A18220B1C32E009FDF40 /* ProductsAPI.swift */; };
+		6FB3A18520B1E416009FDF40 /* ProductNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB3A18420B1E416009FDF40 /* ProductNetworkService.swift */; };
+		6FB3A18720B20097009FDF40 /* ShoppingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB3A18620B20097009FDF40 /* ShoppingAPI.swift */; };
+		6FB3A18A20B2014E009FDF40 /* ShoppingNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB3A18920B2014E009FDF40 /* ShoppingNetworkService.swift */; };
+		6FB3A18D20B20343009FDF40 /* PurchasesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB3A18C20B20343009FDF40 /* PurchasesViewModel.swift */; };
+		6FB3A19120B20FB8009FDF40 /* ShopListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB3A18F20B20FB8009FDF40 /* ShopListTableViewCell.swift */; };
+		6FB3A19220B20FB8009FDF40 /* ShopListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FB3A19020B20FB8009FDF40 /* ShopListTableViewCell.xib */; };
+		6FB3A19320B21E8F009FDF40 /* omnes_extralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C730F8520A866B900C72A9D /* omnes_extralight.ttf */; };
+		6FB3A19420B21E8F009FDF40 /* omnes_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C730F8320A866B900C72A9D /* omnes_light.ttf */; };
+		6FB3A19520B21E8F009FDF40 /* omnes_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C730F8220A866B900C72A9D /* omnes_medium.ttf */; };
+		6FB3A19620B21E8F009FDF40 /* omnes_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C730F8120A866B900C72A9D /* omnes_regular.ttf */; };
+		6FB3A19720B21E8F009FDF40 /* omnes_semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C730F8420A866B900C72A9D /* omnes_semibold.ttf */; };
+		DB9F7DA55F28E15EE976EC52 /* Pods_grocify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E77299422095EB51D5AA47 /* Pods_grocify.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01A31E807BB264383E97D9EB /* Pods-grocify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grocify.release.xcconfig"; path = "Pods/Target Support Files/Pods-grocify/Pods-grocify.release.xcconfig"; sourceTree = "<group>"; };
+		3C730F4320A8587500C72A9D /* grocify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grocify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C730F4620A8587500C72A9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C730F4B20A8587500C72A9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C730F4D20A8587800C72A9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C730F5020A8587800C72A9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C730F5220A8587800C72A9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C730F5920A8592900C72A9D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3C730F5B20A859BF00C72A9D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		3C730F5D20A85A2100C72A9D /* ProductsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCoordinator.swift; sourceTree = "<group>"; };
+		3C730F5F20A85A3200C72A9D /* RecipesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesCoordinator.swift; sourceTree = "<group>"; };
+		3C730F6220A85A4600C72A9D /* PreferencesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesCoordinator.swift; sourceTree = "<group>"; };
+		3C730F6420A85A5C00C72A9D /* PurchasesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasesCoordinator.swift; sourceTree = "<group>"; };
+		3C730F6620A85B0600C72A9D /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		3C730F6820A85B3600C72A9D /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Asset.swift; path = grocify/Utils/Asset.swift; sourceTree = SOURCE_ROOT; };
+		3C730F6B20A85C2900C72A9D /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		3C730F6C20A85C2900C72A9D /* ProductsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsViewController.xib; sourceTree = "<group>"; };
+		3C730F6F20A85DA000C72A9D /* LocalizableString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableString.swift; sourceTree = "<group>"; };
+		3C730F7120A85F4B00C72A9D /* PurchasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasesViewController.swift; sourceTree = "<group>"; };
+		3C730F7220A85F4B00C72A9D /* PurchasesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchasesViewController.xib; sourceTree = "<group>"; };
+		3C730F7520A85F5E00C72A9D /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		3C730F7620A85F5E00C72A9D /* PreferencesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesViewController.xib; sourceTree = "<group>"; };
+		3C730F7920A85F6B00C72A9D /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
+		3C730F7A20A85F6B00C72A9D /* RecipesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipesViewController.xib; sourceTree = "<group>"; };
+		3C730F7D20A8649200C72A9D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		3C730F8120A866B900C72A9D /* omnes_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = omnes_regular.ttf; sourceTree = "<group>"; };
+		3C730F8220A866B900C72A9D /* omnes_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = omnes_medium.ttf; sourceTree = "<group>"; };
+		3C730F8320A866B900C72A9D /* omnes_light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = omnes_light.ttf; sourceTree = "<group>"; };
+		3C730F8420A866B900C72A9D /* omnes_semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = omnes_semibold.ttf; sourceTree = "<group>"; };
+		3C730F8520A866B900C72A9D /* omnes_extralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = omnes_extralight.ttf; sourceTree = "<group>"; };
+		3C730F8620A8670E00C72A9D /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		3CC524C020A87AC200E0A0B2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		3CC524C420A87DE800E0A0B2 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		3CC524C620A8806E00E0A0B2 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		3CC524C820A8828100E0A0B2 /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		3CC524CA20A882DF00E0A0B2 /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
+		3CC524CC20A8861A00E0A0B2 /* ShopList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopList.swift; sourceTree = "<group>"; };
+		3CC524CE20A887F000E0A0B2 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		6FB3A17A20B180EE009FDF40 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		6FB3A17B20B180EE009FDF40 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		6FB3A18020B1BACD009FDF40 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		6FB3A18220B1C32E009FDF40 /* ProductsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsAPI.swift; sourceTree = "<group>"; };
+		6FB3A18420B1E416009FDF40 /* ProductNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNetworkService.swift; sourceTree = "<group>"; };
+		6FB3A18620B20097009FDF40 /* ShoppingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAPI.swift; sourceTree = "<group>"; };
+		6FB3A18920B2014E009FDF40 /* ShoppingNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingNetworkService.swift; sourceTree = "<group>"; };
+		6FB3A18C20B20343009FDF40 /* PurchasesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasesViewModel.swift; sourceTree = "<group>"; };
+		6FB3A18F20B20FB8009FDF40 /* ShopListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListTableViewCell.swift; sourceTree = "<group>"; };
+		6FB3A19020B20FB8009FDF40 /* ShopListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopListTableViewCell.xib; sourceTree = "<group>"; };
+		74E77299422095EB51D5AA47 /* Pods_grocify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_grocify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE35FC5287374D29AC13DF4 /* Pods-grocify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grocify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-grocify/Pods-grocify.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C730F4020A8587400C72A9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB9F7DA55F28E15EE976EC52 /* Pods_grocify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D2660FE20A49B973C9E6206 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAE35FC5287374D29AC13DF4 /* Pods-grocify.debug.xcconfig */,
+				01A31E807BB264383E97D9EB /* Pods-grocify.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3C730F3A20A8587400C72A9D = {
+			isa = PBXGroup;
+			children = (
+				3C730F4520A8587500C72A9D /* grocify */,
+				3C730F4420A8587500C72A9D /* Products */,
+				1D2660FE20A49B973C9E6206 /* Pods */,
+				988A13B6570C34C3EEF8521C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3C730F4420A8587500C72A9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C730F4320A8587500C72A9D /* grocify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C730F4520A8587500C72A9D /* grocify */ = {
+			isa = PBXGroup;
+			children = (
+				3CC524C320A87D6800E0A0B2 /* Model */,
+				3CC524BD20A8777200E0A0B2 /* APIs */,
+				3C730F7F20A8658300C72A9D /* Utils */,
+				3C730F6A20A85C0A00C72A9D /* Views and Controllers */,
+				3C730F5820A8591100C72A9D /* Coordinators */,
+				3C730F4620A8587500C72A9D /* AppDelegate.swift */,
+				3C730F4A20A8587500C72A9D /* Main.storyboard */,
+				3C730F4D20A8587800C72A9D /* Assets.xcassets */,
+				3C730F4F20A8587800C72A9D /* LaunchScreen.storyboard */,
+				3C730F5220A8587800C72A9D /* Info.plist */,
+			);
+			path = grocify;
+			sourceTree = "<group>";
+		};
+		3C730F5820A8591100C72A9D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				3C730F5920A8592900C72A9D /* AppCoordinator.swift */,
+				3C730F5B20A859BF00C72A9D /* Coordinator.swift */,
+				3C730F5D20A85A2100C72A9D /* ProductsCoordinator.swift */,
+				3C730F5F20A85A3200C72A9D /* RecipesCoordinator.swift */,
+				3C730F6220A85A4600C72A9D /* PreferencesCoordinator.swift */,
+				3C730F6420A85A5C00C72A9D /* PurchasesCoordinator.swift */,
+				3C730F6620A85B0600C72A9D /* HomeCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		3C730F6A20A85C0A00C72A9D /* Views and Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6FB3A17920B1803E009FDF40 /* Recipes */,
+				6FB3A17820B18037009FDF40 /* Preferences */,
+				6FB3A17720B18030009FDF40 /* Purchases */,
+				6FB3A17620B18028009FDF40 /* Products */,
+			);
+			path = "Views and Controllers";
+			sourceTree = "<group>";
+		};
+		3C730F7F20A8658300C72A9D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3C730F8020A866AC00C72A9D /* Fonts */,
+				3C730F6820A85B3600C72A9D /* Asset.swift */,
+				3C730F6F20A85DA000C72A9D /* LocalizableString.swift */,
+				3C730F7D20A8649200C72A9D /* Colors.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3C730F8020A866AC00C72A9D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3C730F8520A866B900C72A9D /* omnes_extralight.ttf */,
+				3C730F8320A866B900C72A9D /* omnes_light.ttf */,
+				3C730F8220A866B900C72A9D /* omnes_medium.ttf */,
+				3C730F8120A866B900C72A9D /* omnes_regular.ttf */,
+				3C730F8420A866B900C72A9D /* omnes_semibold.ttf */,
+				3C730F8620A8670E00C72A9D /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3CC524BD20A8777200E0A0B2 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				3CC524BF20A8779100E0A0B2 /* Services */,
+				3CC524BE20A8778400E0A0B2 /* Networking */,
+				6FB3A18220B1C32E009FDF40 /* ProductsAPI.swift */,
+				6FB3A18620B20097009FDF40 /* ShoppingAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		3CC524BE20A8778400E0A0B2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3CC524C020A87AC200E0A0B2 /* Router.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3CC524BF20A8779100E0A0B2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6FB3A18420B1E416009FDF40 /* ProductNetworkService.swift */,
+				6FB3A18920B2014E009FDF40 /* ShoppingNetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3CC524C320A87D6800E0A0B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3CC524C420A87DE800E0A0B2 /* Product.swift */,
+				3CC524C620A8806E00E0A0B2 /* Recipe.swift */,
+				3CC524C820A8828100E0A0B2 /* Market.swift */,
+				3CC524CA20A882DF00E0A0B2 /* Purchase.swift */,
+				3CC524CC20A8861A00E0A0B2 /* ShopList.swift */,
+				3CC524CE20A887F000E0A0B2 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6FB3A17620B18028009FDF40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FB3A17F20B1BAA8009FDF40 /* ViewModel */,
+				6FB3A17E20B180F2009FDF40 /* Cells */,
+				3C730F6B20A85C2900C72A9D /* ProductsViewController.swift */,
+				3C730F6C20A85C2900C72A9D /* ProductsViewController.xib */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		6FB3A17720B18030009FDF40 /* Purchases */ = {
+			isa = PBXGroup;
+			children = (
+				6FB3A18E20B20FA9009FDF40 /* Cell */,
+				6FB3A18B20B20323009FDF40 /* ViewModel */,
+				3C730F7120A85F4B00C72A9D /* PurchasesViewController.swift */,
+				3C730F7220A85F4B00C72A9D /* PurchasesViewController.xib */,
+			);
+			path = Purchases;
+			sourceTree = "<group>";
+		};
+		6FB3A17820B18037009FDF40 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				3C730F7520A85F5E00C72A9D /* PreferencesViewController.swift */,
+				3C730F7620A85F5E00C72A9D /* PreferencesViewController.xib */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		6FB3A17920B1803E009FDF40 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				3C730F7920A85F6B00C72A9D /* RecipesViewController.swift */,
+				3C730F7A20A85F6B00C72A9D /* RecipesViewController.xib */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		6FB3A17E20B180F2009FDF40 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6FB3A17A20B180EE009FDF40 /* ProductTableViewCell.swift */,
+				6FB3A17B20B180EE009FDF40 /* ProductTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6FB3A17F20B1BAA8009FDF40 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6FB3A18020B1BACD009FDF40 /* ProductsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6FB3A18B20B20323009FDF40 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6FB3A18C20B20343009FDF40 /* PurchasesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6FB3A18E20B20FA9009FDF40 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6FB3A18F20B20FB8009FDF40 /* ShopListTableViewCell.swift */,
+				6FB3A19020B20FB8009FDF40 /* ShopListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		988A13B6570C34C3EEF8521C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74E77299422095EB51D5AA47 /* Pods_grocify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C730F4220A8587400C72A9D /* grocify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C730F5520A8587800C72A9D /* Build configuration list for PBXNativeTarget "grocify" */;
+			buildPhases = (
+				0A80BA2A5CB340A9EC65EE90 /* [CP] Check Pods Manifest.lock */,
+				3C730F3F20A8587400C72A9D /* Sources */,
+				3C730F4020A8587400C72A9D /* Frameworks */,
+				3C730F4120A8587400C72A9D /* Resources */,
+				29433066B3795213A719A88D /* [CP] Embed Pods Frameworks */,
+				26566F2329159F16E25707B5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = grocify;
+			productName = grocify;
+			productReference = 3C730F4320A8587500C72A9D /* grocify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C730F3B20A8587400C72A9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Graciela Lucena";
+				TargetAttributes = {
+					3C730F4220A8587400C72A9D = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3C730F3E20A8587400C72A9D /* Build configuration list for PBXProject "grocify" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C730F3A20A8587400C72A9D;
+			productRefGroup = 3C730F4420A8587500C72A9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C730F4220A8587400C72A9D /* grocify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C730F4120A8587400C72A9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FB3A19320B21E8F009FDF40 /* omnes_extralight.ttf in Resources */,
+				6FB3A19420B21E8F009FDF40 /* omnes_light.ttf in Resources */,
+				6FB3A19520B21E8F009FDF40 /* omnes_medium.ttf in Resources */,
+				6FB3A19620B21E8F009FDF40 /* omnes_regular.ttf in Resources */,
+				6FB3A19720B21E8F009FDF40 /* omnes_semibold.ttf in Resources */,
+				3C730F5120A8587800C72A9D /* LaunchScreen.storyboard in Resources */,
+				3C730F7C20A85F6B00C72A9D /* RecipesViewController.xib in Resources */,
+				3C730F4E20A8587800C72A9D /* Assets.xcassets in Resources */,
+				3C730F6E20A85C2A00C72A9D /* ProductsViewController.xib in Resources */,
+				3C730F4C20A8587500C72A9D /* Main.storyboard in Resources */,
+				6FB3A17D20B180EE009FDF40 /* ProductTableViewCell.xib in Resources */,
+				3C730F7420A85F4B00C72A9D /* PurchasesViewController.xib in Resources */,
+				3C730F7820A85F5E00C72A9D /* PreferencesViewController.xib in Resources */,
+				6FB3A19220B20FB8009FDF40 /* ShopListTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A80BA2A5CB340A9EC65EE90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-grocify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26566F2329159F16E25707B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-grocify/Pods-grocify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29433066B3795213A719A88D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-grocify/Pods-grocify-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Gloss/Gloss.framework",
+				"${BUILT_PRODUCTS_DIR}/HexColors/HexColors.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gloss.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HexColors.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-grocify/Pods-grocify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C730F3F20A8587400C72A9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C730F5C20A859BF00C72A9D /* Coordinator.swift in Sources */,
+				3CC524CD20A8861A00E0A0B2 /* ShopList.swift in Sources */,
+				6FB3A19120B20FB8009FDF40 /* ShopListTableViewCell.swift in Sources */,
+				3C730F6320A85A4600C72A9D /* PreferencesCoordinator.swift in Sources */,
+				3C730F6920A85B3600C72A9D /* Asset.swift in Sources */,
+				3C730F6720A85B0600C72A9D /* HomeCoordinator.swift in Sources */,
+				6FB3A18520B1E416009FDF40 /* ProductNetworkService.swift in Sources */,
+				3CC524C120A87AC200E0A0B2 /* Router.swift in Sources */,
+				6FB3A18320B1C32E009FDF40 /* ProductsAPI.swift in Sources */,
+				3C730F6D20A85C2900C72A9D /* ProductsViewController.swift in Sources */,
+				3C730F7720A85F5E00C72A9D /* PreferencesViewController.swift in Sources */,
+				3C730F5A20A8592900C72A9D /* AppCoordinator.swift in Sources */,
+				3C730F8720A8670E00C72A9D /* Fonts.swift in Sources */,
+				3C730F7020A85DA000C72A9D /* LocalizableString.swift in Sources */,
+				3C730F7E20A8649200C72A9D /* Colors.swift in Sources */,
+				3CC524C520A87DE800E0A0B2 /* Product.swift in Sources */,
+				6FB3A18120B1BACD009FDF40 /* ProductsViewModel.swift in Sources */,
+				3C730F4720A8587500C72A9D /* AppDelegate.swift in Sources */,
+				3C730F7320A85F4B00C72A9D /* PurchasesViewController.swift in Sources */,
+				3C730F6020A85A3200C72A9D /* RecipesCoordinator.swift in Sources */,
+				3C730F5E20A85A2100C72A9D /* ProductsCoordinator.swift in Sources */,
+				6FB3A17C20B180EE009FDF40 /* ProductTableViewCell.swift in Sources */,
+				6FB3A18720B20097009FDF40 /* ShoppingAPI.swift in Sources */,
+				3CC524CF20A887F000E0A0B2 /* Card.swift in Sources */,
+				3CC524C720A8806E00E0A0B2 /* Recipe.swift in Sources */,
+				3C730F7B20A85F6B00C72A9D /* RecipesViewController.swift in Sources */,
+				3C730F6520A85A5C00C72A9D /* PurchasesCoordinator.swift in Sources */,
+				6FB3A18A20B2014E009FDF40 /* ShoppingNetworkService.swift in Sources */,
+				6FB3A18D20B20343009FDF40 /* PurchasesViewModel.swift in Sources */,
+				3CC524C920A8828100E0A0B2 /* Market.swift in Sources */,
+				3CC524CB20A882DF00E0A0B2 /* Purchase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3C730F4A20A8587500C72A9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C730F4B20A8587500C72A9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C730F4F20A8587800C72A9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C730F5020A8587800C72A9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C730F5320A8587800C72A9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C730F5420A8587800C72A9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C730F5620A8587800C72A9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAE35FC5287374D29AC13DF4 /* Pods-grocify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = grocify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GracielaLucena.grocify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C730F5720A8587800C72A9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01A31E807BB264383E97D9EB /* Pods-grocify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = grocify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GracielaLucena.grocify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C730F3E20A8587400C72A9D /* Build configuration list for PBXProject "grocify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C730F5320A8587800C72A9D /* Debug */,
+				3C730F5420A8587800C72A9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C730F5520A8587800C72A9D /* Build configuration list for PBXNativeTarget "grocify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C730F5620A8587800C72A9D /* Debug */,
+				3C730F5720A8587800C72A9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C730F3B20A8587400C72A9D /* Project object */;
+}

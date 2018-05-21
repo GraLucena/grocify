@@ -1,0 +1,6 @@
+framework module Pods_grocify {
+  umbrella header "Pods-grocify-umbrella.h"
+
+  export *
+  module * { export * }
+}

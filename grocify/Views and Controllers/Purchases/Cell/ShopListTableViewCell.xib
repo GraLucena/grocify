@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="omnes_light.ttf">
+            <string>Omnes-Light</string>
+        </array>
+        <array key="omnes_semibold.ttf">
+            <string>Omnes-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="KGk-i7-Jjw" customClass="ShopListTableViewCell" customModule="grocify" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mercado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJt-IL-auu">
+                        <rect key="frame" x="16" y="38" width="64" height="18"/>
+                        <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oae-iQ-lyP">
+                        <rect key="frame" x="16" y="16" width="60" height="18"/>
+                        <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wb8-H7-LRL">
+                        <rect key="frame" x="254" y="29.5" width="32.5" height="16"/>
+                        <fontDescription key="fontDescription" name="Omnes-Light" family="Omnes" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weR-PE-AA5">
+                        <rect key="frame" x="96" y="15.5" width="39" height="19"/>
+                        <fontDescription key="fontDescription" name="Omnes-Light" family="Omnes" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnQ-9W-Yif">
+                        <rect key="frame" x="96" y="37.5" width="39" height="19"/>
+                        <fontDescription key="fontDescription" name="Omnes-Light" family="Omnes" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Productos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HO9-cO-YMZ">
+                        <rect key="frame" x="240" y="15.5" width="60" height="14"/>
+                        <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="AJt-IL-auu" secondAttribute="bottom" constant="8" id="8F8-0t-orL"/>
+                    <constraint firstItem="cnQ-9W-Yif" firstAttribute="leading" secondItem="AJt-IL-auu" secondAttribute="trailing" constant="16" id="Cbz-Dc-NV7"/>
+                    <constraint firstItem="AJt-IL-auu" firstAttribute="top" secondItem="Oae-iQ-lyP" secondAttribute="bottom" constant="4" id="GzP-ON-PDz"/>
+                    <constraint firstItem="Oae-iQ-lyP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="OK1-16-iLL"/>
+                    <constraint firstItem="weR-PE-AA5" firstAttribute="centerY" secondItem="Oae-iQ-lyP" secondAttribute="centerY" id="PU7-Of-wsD"/>
+                    <constraint firstItem="AJt-IL-auu" firstAttribute="leading" secondItem="Oae-iQ-lyP" secondAttribute="leading" id="T3R-yH-gMO"/>
+                    <constraint firstItem="weR-PE-AA5" firstAttribute="leading" secondItem="cnQ-9W-Yif" secondAttribute="leading" id="YFc-cm-Jgl"/>
+                    <constraint firstAttribute="trailing" secondItem="HO9-cO-YMZ" secondAttribute="trailing" constant="20" symbolic="YES" id="bq5-ve-EcH"/>
+                    <constraint firstItem="Oae-iQ-lyP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="hPp-9b-d9w"/>
+                    <constraint firstItem="HO9-cO-YMZ" firstAttribute="top" secondItem="weR-PE-AA5" secondAttribute="top" id="oTl-ZF-o41"/>
+                    <constraint firstItem="Wb8-H7-LRL" firstAttribute="centerX" secondItem="HO9-cO-YMZ" secondAttribute="centerX" id="sv3-e4-VVu"/>
+                    <constraint firstItem="Wb8-H7-LRL" firstAttribute="top" secondItem="HO9-cO-YMZ" secondAttribute="bottom" id="x6z-HA-1q5"/>
+                    <constraint firstItem="cnQ-9W-Yif" firstAttribute="centerY" secondItem="AJt-IL-auu" secondAttribute="centerY" id="yfX-AZ-ezY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="listName" destination="weR-PE-AA5" id="S1t-yA-IRc"/>
+                <outlet property="marketName" destination="cnQ-9W-Yif" id="NJn-re-V4B"/>
+                <outlet property="productsQuantity" destination="Wb8-H7-LRL" id="U1U-e0-lUc"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="38.5"/>
+        </tableViewCell>
+    </objects>
+</document>
