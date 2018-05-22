@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "12B06340B195645359C318C745ED5DD8"
+               BlueprintIdentifier = "9D4F6D3C366D776FDAA1121AAC56A94E"
                BuildableName = "Pods_grocify.framework"
                BlueprintName = "Pods-grocify"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "12B06340B195645359C318C745ED5DD8"
+            BlueprintIdentifier = "9D4F6D3C366D776FDAA1121AAC56A94E"
             BuildableName = "Pods_grocify.framework"
             BlueprintName = "Pods-grocify"
             ReferencedContainer = "container:Pods.xcodeproj">

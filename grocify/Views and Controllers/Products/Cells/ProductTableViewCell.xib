@@ -27,7 +27,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="364" height="75.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="kQ6-ek-r6a">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="kQ6-ek-r6a">
                         <rect key="frame" x="16" y="7" width="60" height="60"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="5dF-vO-jsU"/>
@@ -35,13 +35,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXb-0J-ACi">
-                        <rect key="frame" x="84" y="27" width="42" height="20"/>
+                        <rect key="frame" x="84" y="27.5" width="42" height="20"/>
                         <fontDescription key="fontDescription" name="Omnes-Regular" family="Omnes" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xre-4d-qVW">
-                        <rect key="frame" x="306" y="26.5" width="42" height="20"/>
+                        <rect key="frame" x="306" y="27.5" width="42" height="20"/>
                         <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>

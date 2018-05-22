@@ -44,6 +44,7 @@ class PurchasesViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: String(describing: ShopListTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: ShopListTableViewCell.self))
+        tableView.tableFooterView = UIView()
     }
 }
 

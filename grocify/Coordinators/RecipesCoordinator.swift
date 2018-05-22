@@ -24,7 +24,8 @@ class RecipesCoordinator: Coordinator {
     
     // MARK: - Initializers
     init() {
-        let recipesVC = RecipesViewController()
+        let recipeVM = RecipesAPIViewModel()
+        let recipesVC = RecipesViewController(viewModel: recipeVM)
         rootViewController = UINavigationController(rootViewController: recipesVC)
         coordinators = [:]
         recipesVC.coordinator = self

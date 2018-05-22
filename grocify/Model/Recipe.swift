@@ -11,12 +11,12 @@ import Gloss
 
 struct Recipe: JSONDecodable {
     
-    let id: Int?
-    let ingredients: [Product]?
-    let duration: Double?
-    let rating: Double?
-    let description: String?
-    let name: String?
+    let id: Int!
+    let ingredients: [Product]!
+    let duration: Double!
+    let rating: Double!
+    let description: String!
+    let name: String!
     
     // MARK: - Deserialization
     init?(json: JSON) {

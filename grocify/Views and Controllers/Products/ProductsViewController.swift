@@ -47,6 +47,7 @@ class ProductsViewController: UIViewController {
         tableView.rowHeight = 76
         tableView.estimatedRowHeight = UITableViewAutomaticDimension
         tableView.register(UINib(nibName: String(describing: ProductTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: ProductTableViewCell.self))
+        tableView.tableFooterView = UIView()
     }
 }
 
@@ -63,11 +64,9 @@ extension ProductsViewController : UITableViewDataSource, UITableViewDelegate{
         
         if let cell = cell as? ProductTableViewCell {
             let item = viewModel.productsAt(index: indexPath.row)
-            
             cell.productName.text = item?.name
             cell.productPrice.text = String(format: "%.2f €", item?.price ?? 0.0)
-            
-            
+            cell.productImage.loadImage(with: (item?.imageURL)!, placeholderImage: UIImage(asset: Asset.placeholder))
         }
         
         return cell

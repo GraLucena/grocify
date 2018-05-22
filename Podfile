@@ -8,6 +8,8 @@ target 'grocify' do
     pod 'Alamofire'
     pod 'Gloss'
     pod 'SVProgressHUD'
+    pod 'Cosmos', '~> 16.0'
+    pod 'AlamofireImage'
   # Pods for grocify
 
 end

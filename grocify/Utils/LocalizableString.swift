@@ -25,6 +25,11 @@ enum LocalizableString: String {
     case daily = "Diario"
     case biweekly = "Quincenal"
 
+    //MARK: - Preferences
+    case paymentMethods = "Métodos de pago"
+    case alertas = "Notificaciones"
+    case shopPreferences = "Preferencias de compra"
+
 
     var localizedString: String {
         return NSLocalizedString(rawValue, comment: "")

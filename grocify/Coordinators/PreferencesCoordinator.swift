@@ -24,7 +24,8 @@ class PreferencesCoordinator: Coordinator {
     
     // MARK: - Initializers
     init() {
-        let preferencesVC = PreferencesViewController()
+        let preferencesVM = PreferencesAPIViewModel()
+        let preferencesVC = PreferencesViewController(viewModel: preferencesVM)
         rootViewController = UINavigationController(rootViewController: preferencesVC)
         coordinators = [:]
         preferencesVC.coordinator = self
