@@ -68,6 +68,10 @@ extension RecipesViewController : UITableViewDataSource, UITableViewDelegate{
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.selectRecipeAt(index: indexPath.row)
+    }
 }
 
 // MARK: - RecipesViewModelViewDelegate

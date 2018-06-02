@@ -29,14 +29,31 @@ class RecipesCoordinator: Coordinator {
         rootViewController = UINavigationController(rootViewController: recipesVC)
         coordinators = [:]
         recipesVC.coordinator = self
+        recipeVM.coordinatorDelegate = self
     }
     
     // MARK: - Coordinator
     func start() {}
     
+    func showRecipeDetail(recipe: Recipe) {
+        let recipeDetailVM = RecipeDetailAPIViewModel(recipe: recipe)
+        let recipeDetailVC = RecipeDetailViewController(viewModel: recipeDetailVM)
+        recipeDetailVC.hidesBottomBarWhenPushed = true
+        //playlistDetailVM.coordinatorDelegate = self
+        
+        navigationController.pushViewController(recipeDetailVC, animated: true)
+    }
 }
 
 // MARK: - PanicCoodinator
 extension RecipesCoordinator: RecipesViewControllerCoordinator {
     
+}
+
+// MARK: - PanicCoodinator
+extension RecipesCoordinator: RecipesViewModelCoordinatorDelegate {
+    
+    func recipesViewModel(_ viewModel: RecipesViewModel, didSelectRecipe: Recipe) {
+        showRecipeDetail(recipe: didSelectRecipe)
+    }
 }

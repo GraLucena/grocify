@@ -14,7 +14,7 @@ protocol RecipesViewModelViewDelegate: class {
 }
 
 protocol RecipesViewModelCoordinatorDelegate: class {
-    func recipesViewModel(_ viewModel: RecipesViewModel, didSelectRecipeWith id: Int)
+    func recipesViewModel(_ viewModel: RecipesViewModel, didSelectRecipe: Recipe)
 }
 
 protocol RecipesViewModel: class {
@@ -54,8 +54,7 @@ class RecipesAPIViewModel: RecipesViewModel {
     }
     
     func selectRecipeAt(index: Int) {
-        guard let product = items?[index] else { return }
-        coordinatorDelegate?.recipesViewModel(self, didSelectRecipeWith: product.id)
+        coordinatorDelegate?.recipesViewModel(self, didSelectRecipe: apiRecipes[index])
     }
     
     func getRecipes() {
