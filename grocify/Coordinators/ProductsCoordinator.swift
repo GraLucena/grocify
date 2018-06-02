@@ -30,14 +30,27 @@ class ProductsCoordinator: Coordinator {
         rootViewController = UINavigationController(rootViewController: productsVC)
         coordinators = [:]
         productsVC.coordinator = self
+        productsVM.coordinatorDelegate = self
     }
     
     // MARK: - Coordinator
     func start() {}
     
+    func showProductDetail(product: Product) {
+        let productDetailVM = ProductDetailAPIViewModel(product: product)
+        let productDetailVC = ProductDetailViewController(viewModel: productDetailVM)
+        productDetailVC.hidesBottomBarWhenPushed = true
+        navigationController.pushViewController(productDetailVC, animated: true)
+    }
 }
 
-// MARK: - PanicCoodinator
 extension ProductsCoordinator: ProductsViewControllerCoordinator {
     
+}
+
+extension ProductsCoordinator: ProductsViewModelCoordinatorDelegate {
+    
+    func productsViewModel(_ viewModel: ProductsViewModel, didSelect product: Product) {
+        showProductDetail(product: product)
+    }
 }

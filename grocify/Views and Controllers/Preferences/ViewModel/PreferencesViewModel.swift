@@ -31,7 +31,9 @@ protocol PreferencesViewModelViewDelegate: class {
 }
 
 protocol PreferencesViewModelCoordinatorDelegate: class {
-    func preferencesViewModel(_ viewModel: PreferencesViewModel, didSelectRow: Rows)
+    func preferencesViewModelDidSelectPaymentMethods(_ viewModel: PreferencesViewModel)
+    func preferencesViewModelDidSelectAlerts(_ viewModel: PreferencesViewModel)
+    func preferencesViewModelDidSelectShoppingPreferences(_ viewModel: PreferencesViewModel)
 }
 
 protocol PreferencesViewModel: class {
@@ -40,7 +42,7 @@ protocol PreferencesViewModel: class {
     
     func numberOfRows() -> Int
     func rowAt(index: Int) -> Rows!
-    func selectRecipeAt(index: Int)
+    func selectRowAt(index: Int)
 
 }
 
@@ -58,9 +60,17 @@ class PreferencesAPIViewModel: PreferencesViewModel {
         return preferencesRows[index]
     }
     
-    func selectRecipeAt(index: Int) {
+    func selectRowAt(index: Int) {
         let row = preferencesRows[index]
-        coordinatorDelegate?.preferencesViewModel(self, didSelectRow: row)
+        switch row {
+        case .alerts:
+            coordinatorDelegate?.preferencesViewModelDidSelectAlerts(self)
+        case .cards:
+            coordinatorDelegate?.preferencesViewModelDidSelectPaymentMethods(self)
+        case .shoppingPreferences:
+            coordinatorDelegate?.preferencesViewModelDidSelectShoppingPreferences(self)
+        
+        }
     }
 
 }

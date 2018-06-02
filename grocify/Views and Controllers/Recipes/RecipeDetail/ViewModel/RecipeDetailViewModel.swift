@@ -38,6 +38,7 @@ class RecipeDetailAPIViewModel: RecipeDetailViewModel {
             items = recipe.ingredients
         }
     }
+    
     required init(recipe: Recipe) {
         self.recipe = recipe
         self.items = recipe.ingredients

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="omnes_semibold.ttf">
+            <string>Omnes-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PurchaseFooterTableViewCell" rowHeight="62" id="KGk-i7-Jjw" customClass="PurchaseFooterTableViewCell" customModule="grocify" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="61.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDL-Q8-XOT">
+                        <rect key="frame" x="16" y="11" width="308" height="40"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.2901960784" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="ETZ-cj-kX8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="17"/>
+                        <state key="normal" title="Hacer Pedido">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rDL-Q8-XOT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="561-Lu-dRE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="rDL-Q8-XOT" secondAttribute="bottom" id="6CZ-uL-tu3"/>
+                    <constraint firstAttribute="trailing" secondItem="rDL-Q8-XOT" secondAttribute="trailing" constant="16" id="Qtq-6b-245"/>
+                    <constraint firstItem="rDL-Q8-XOT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="plG-lj-7wV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="44" y="63"/>
+        </tableViewCell>
+    </objects>
+</document>

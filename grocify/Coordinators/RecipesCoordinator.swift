@@ -45,12 +45,10 @@ class RecipesCoordinator: Coordinator {
     }
 }
 
-// MARK: - PanicCoodinator
 extension RecipesCoordinator: RecipesViewControllerCoordinator {
     
 }
 
-// MARK: - PanicCoodinator
 extension RecipesCoordinator: RecipesViewModelCoordinatorDelegate {
     
     func recipesViewModel(_ viewModel: RecipesViewModel, didSelectRecipe: Recipe) {

@@ -18,6 +18,8 @@ enum Asset: String {
     case preferences_selected = "preferences_selected"
     case purchases = "purchases"
     case purchases_selected = "purchases_selected"
+    case fridge = "fridge"
+    case fridge_selected = "fridge_selected"
 
     case placeholder = "placeholder"
 }

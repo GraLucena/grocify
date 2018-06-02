@@ -53,8 +53,13 @@ class HomeCoordinator: Coordinator {
         
         // Purchases
         let purchasesCoordinator = createPurchasesCoordinator()
-        coordinators[PurchasesCoordinator.name] = productsCoordinator
+        coordinators[PurchasesCoordinator.name] = purchasesCoordinator
         purchasesCoordinator.start()
+
+        // Fridge
+        let fridgeCoordinator = createFridgeCoordinator()
+        coordinators[FridgeCoordinator.name] = fridgeCoordinator
+        fridgeCoordinator.start()
 
         // Recipes
         let recipesCoordinator = createRecipesCoordinator()
@@ -66,10 +71,10 @@ class HomeCoordinator: Coordinator {
         coordinators[PreferencesCoordinator.name] = preferencesCoordinator
         preferencesCoordinator.start()
 
-
         
         let viewControllers = [productsCoordinator.rootViewController,
                                purchasesCoordinator.rootViewController,
+                               fridgeCoordinator.rootViewController,
                                recipesCoordinator.rootViewController,
                                preferencesCoordinator.rootViewController]
         
@@ -110,6 +115,15 @@ class HomeCoordinator: Coordinator {
         recipesCoordinator.rootViewController.tabBarItem = tabBarItem
 
         return recipesCoordinator
+    }
+    
+    private func createFridgeCoordinator() -> FridgeCoordinator {
+        let fridgeCoordinator = FridgeCoordinator()
+        
+        let tabBarItem = createTabBarItem(title: .fridge, asset: .fridge, selectedAsset: .fridge_selected)
+        fridgeCoordinator.rootViewController.tabBarItem = tabBarItem
+        
+        return fridgeCoordinator
     }
     
 }

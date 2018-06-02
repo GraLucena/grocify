@@ -29,14 +29,27 @@ class PurchasesCoordinator: Coordinator {
         rootViewController = UINavigationController(rootViewController: purchasesVC)
         coordinators = [:]
         purchasesVC.coordinator = self
+        purchasesVM.coordinatorDelegate = self
     }
     
     // MARK: - Coordinator
     func start() {}
     
+    func showPurchasesDetail(shopList: ShopList) {
+        let purchasesDetailVM = PurchasesDetailAPIViewModel(list: shopList)
+        let purchasesDetailVC = PurchasesDetailViewController(viewModel: purchasesDetailVM)
+        purchasesDetailVC.hidesBottomBarWhenPushed = true
+
+        navigationController.pushViewController(purchasesDetailVC, animated: true)
+    }
 }
 
-// MARK: - PanicCoodinator
 extension PurchasesCoordinator: PurchasesViewControllerCoordinator {
     
+}
+
+extension PurchasesCoordinator: PurchasesViewModelCoordinatorDelegate {
+    func purchasesViewModel(_ viewModel: PurchasesViewModel, didSelect list: ShopList) {
+        showPurchasesDetail(shopList: list)
+    }
 }

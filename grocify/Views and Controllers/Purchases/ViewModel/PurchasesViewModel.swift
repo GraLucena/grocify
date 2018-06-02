@@ -14,7 +14,7 @@ protocol PurchasesViewModelViewDelegate: class {
 }
 
 protocol PurchasesViewModelCoordinatorDelegate: class {
-    func purchasesViewModel(_ viewModel: PurchasesViewModel, didSelectListWith id: Int)
+    func purchasesViewModel(_ viewModel: PurchasesViewModel, didSelect list: ShopList)
 }
 
 protocol PurchasesViewModel: class {
@@ -54,8 +54,8 @@ class PurchasesAPIViewModel: PurchasesViewModel {
     }
     
     func selectPurchaseAt(index: Int) {
-        guard let product = items?[index] else { return }
-        coordinatorDelegate?.purchasesViewModel(self, didSelectListWith: product.id)
+        guard let list = apiPurchases?[index] else { return }
+        coordinatorDelegate?.purchasesViewModel(self, didSelect: list)
     }
     
     func getShoppingLists() {

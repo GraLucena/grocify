@@ -66,6 +66,11 @@ extension PreferencesViewController : UITableViewDataSource, UITableViewDelegate
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        viewModel.selectRowAt(index: indexPath.row)
+    }
 }
 
 // MARK: - PreferencesViewModelViewDelegate

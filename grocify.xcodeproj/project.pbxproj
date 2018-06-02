@@ -37,6 +37,24 @@
 		3CC524CB20A882DF00E0A0B2 /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC524CA20A882DF00E0A0B2 /* Purchase.swift */; };
 		3CC524CD20A8861A00E0A0B2 /* ShopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC524CC20A8861A00E0A0B2 /* ShopList.swift */; };
 		3CC524CF20A887F000E0A0B2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC524CE20A887F000E0A0B2 /* Card.swift */; };
+		6F462DF220C2CD4B00A7D749 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F462DF020C2CD4B00A7D749 /* ProductDetailViewController.swift */; };
+		6F462DF320C2CD4B00A7D749 /* ProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F462DF120C2CD4B00A7D749 /* ProductDetailViewController.xib */; };
+		6F462DF620C2D1BB00A7D749 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F462DF520C2D1BB00A7D749 /* ProductDetailViewModel.swift */; };
+		6F462DF820C2E7BD00A7D749 /* FridgeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F462DF720C2E7BD00A7D749 /* FridgeCoordinator.swift */; };
+		6F462DFB20C2E8A700A7D749 /* FridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F462DF920C2E8A700A7D749 /* FridgeViewController.swift */; };
+		6F462DFC20C2E8A700A7D749 /* FridgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F462DFA20C2E8A700A7D749 /* FridgeViewController.xib */; };
+		6F462E0020C2EAC000A7D749 /* FridgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F462DFF20C2EAC000A7D749 /* FridgeViewModel.swift */; };
+		6F462E0C20C2F5AE00A7D749 /* PurchasesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F462E0A20C2F5AE00A7D749 /* PurchasesDetailViewController.swift */; };
+		6F462E0D20C2F5AE00A7D749 /* PurchasesDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F462E0B20C2F5AE00A7D749 /* PurchasesDetailViewController.xib */; };
+		6F462E1020C2F5C400A7D749 /* PurchaseHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F462E0E20C2F5C300A7D749 /* PurchaseHeaderTableViewCell.swift */; };
+		6F462E1120C2F5C400A7D749 /* PurchaseHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F462E0F20C2F5C400A7D749 /* PurchaseHeaderTableViewCell.xib */; };
+		6F462E1420C2F5D700A7D749 /* PurchaseFooterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F462E1220C2F5D700A7D749 /* PurchaseFooterTableViewCell.swift */; };
+		6F462E1520C2F5D700A7D749 /* PurchaseFooterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F462E1320C2F5D700A7D749 /* PurchaseFooterTableViewCell.xib */; };
+		6F462E1920C3226400A7D749 /* PurchasesDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F462E1820C3226400A7D749 /* PurchasesDetailViewModel.swift */; };
+		6F462E1D20C32A9600A7D749 /* PaymentMethodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F462E1B20C32A9600A7D749 /* PaymentMethodsViewController.swift */; };
+		6F462E1E20C32A9600A7D749 /* PaymentMethodsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F462E1C20C32A9600A7D749 /* PaymentMethodsViewController.xib */; };
+		6F462E2220C32AAB00A7D749 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F462E2020C32AAB00A7D749 /* CardTableViewCell.swift */; };
+		6F462E2320C32AAB00A7D749 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F462E2120C32AAB00A7D749 /* CardTableViewCell.xib */; };
 		6FB3A17C20B180EE009FDF40 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB3A17A20B180EE009FDF40 /* ProductTableViewCell.swift */; };
 		6FB3A17D20B180EE009FDF40 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FB3A17B20B180EE009FDF40 /* ProductTableViewCell.xib */; };
 		6FB3A18120B1BACD009FDF40 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB3A18020B1BACD009FDF40 /* ProductsViewModel.swift */; };
@@ -108,6 +126,24 @@
 		3CC524CA20A882DF00E0A0B2 /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
 		3CC524CC20A8861A00E0A0B2 /* ShopList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopList.swift; sourceTree = "<group>"; };
 		3CC524CE20A887F000E0A0B2 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		6F462DF020C2CD4B00A7D749 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		6F462DF120C2CD4B00A7D749 /* ProductDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailViewController.xib; sourceTree = "<group>"; };
+		6F462DF520C2D1BB00A7D749 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		6F462DF720C2E7BD00A7D749 /* FridgeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeCoordinator.swift; sourceTree = "<group>"; };
+		6F462DF920C2E8A700A7D749 /* FridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeViewController.swift; sourceTree = "<group>"; };
+		6F462DFA20C2E8A700A7D749 /* FridgeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FridgeViewController.xib; sourceTree = "<group>"; };
+		6F462DFF20C2EAC000A7D749 /* FridgeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeViewModel.swift; sourceTree = "<group>"; };
+		6F462E0A20C2F5AE00A7D749 /* PurchasesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasesDetailViewController.swift; sourceTree = "<group>"; };
+		6F462E0B20C2F5AE00A7D749 /* PurchasesDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchasesDetailViewController.xib; sourceTree = "<group>"; };
+		6F462E0E20C2F5C300A7D749 /* PurchaseHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		6F462E0F20C2F5C400A7D749 /* PurchaseHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		6F462E1220C2F5D700A7D749 /* PurchaseFooterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseFooterTableViewCell.swift; sourceTree = "<group>"; };
+		6F462E1320C2F5D700A7D749 /* PurchaseFooterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseFooterTableViewCell.xib; sourceTree = "<group>"; };
+		6F462E1820C3226400A7D749 /* PurchasesDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasesDetailViewModel.swift; sourceTree = "<group>"; };
+		6F462E1B20C32A9600A7D749 /* PaymentMethodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodsViewController.swift; sourceTree = "<group>"; };
+		6F462E1C20C32A9600A7D749 /* PaymentMethodsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodsViewController.xib; sourceTree = "<group>"; };
+		6F462E2020C32AAB00A7D749 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		6F462E2120C32AAB00A7D749 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
 		6FB3A17A20B180EE009FDF40 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		6FB3A17B20B180EE009FDF40 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		6FB3A18020B1BACD009FDF40 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
@@ -202,6 +238,7 @@
 				3C730F6220A85A4600C72A9D /* PreferencesCoordinator.swift */,
 				3C730F6420A85A5C00C72A9D /* PurchasesCoordinator.swift */,
 				3C730F6620A85B0600C72A9D /* HomeCoordinator.swift */,
+				6F462DF720C2E7BD00A7D749 /* FridgeCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -209,6 +246,7 @@
 		3C730F6A20A85C0A00C72A9D /* Views and Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6F462DFD20C2E8AB00A7D749 /* Fridge */,
 				6FB3A17920B1803E009FDF40 /* Recipes */,
 				6FB3A17820B18037009FDF40 /* Preferences */,
 				6FB3A17720B18030009FDF40 /* Purchases */,
@@ -285,9 +323,95 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		6F462DEF20C2CCC000A7D749 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				6F462DF420C2CF4000A7D749 /* ViewModel */,
+				6F462DF020C2CD4B00A7D749 /* ProductDetailViewController.swift */,
+				6F462DF120C2CD4B00A7D749 /* ProductDetailViewController.xib */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		6F462DF420C2CF4000A7D749 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6F462DF520C2D1BB00A7D749 /* ProductDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6F462DFD20C2E8AB00A7D749 /* Fridge */ = {
+			isa = PBXGroup;
+			children = (
+				6F462DFE20C2E8B400A7D749 /* ViewModel */,
+				6F462DF920C2E8A700A7D749 /* FridgeViewController.swift */,
+				6F462DFA20C2E8A700A7D749 /* FridgeViewController.xib */,
+			);
+			path = Fridge;
+			sourceTree = "<group>";
+		};
+		6F462DFE20C2E8B400A7D749 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6F462DFF20C2EAC000A7D749 /* FridgeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6F462E0120C2F00F00A7D749 /* PurchasesDetail */ = {
+			isa = PBXGroup;
+			children = (
+				6F462E1720C2FDDB00A7D749 /* ViewModel */,
+				6F462E1620C2F5DB00A7D749 /* Cell */,
+				6F462E0A20C2F5AE00A7D749 /* PurchasesDetailViewController.swift */,
+				6F462E0B20C2F5AE00A7D749 /* PurchasesDetailViewController.xib */,
+			);
+			path = PurchasesDetail;
+			sourceTree = "<group>";
+		};
+		6F462E1620C2F5DB00A7D749 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6F462E0E20C2F5C300A7D749 /* PurchaseHeaderTableViewCell.swift */,
+				6F462E0F20C2F5C400A7D749 /* PurchaseHeaderTableViewCell.xib */,
+				6F462E1220C2F5D700A7D749 /* PurchaseFooterTableViewCell.swift */,
+				6F462E1320C2F5D700A7D749 /* PurchaseFooterTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6F462E1720C2FDDB00A7D749 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6F462E1820C3226400A7D749 /* PurchasesDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6F462E1A20C32A7A00A7D749 /* PaymentMethods */ = {
+			isa = PBXGroup;
+			children = (
+				6F462E1F20C32A9A00A7D749 /* Cell */,
+				6F462E1B20C32A9600A7D749 /* PaymentMethodsViewController.swift */,
+				6F462E1C20C32A9600A7D749 /* PaymentMethodsViewController.xib */,
+			);
+			path = PaymentMethods;
+			sourceTree = "<group>";
+		};
+		6F462E1F20C32A9A00A7D749 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6F462E2020C32AAB00A7D749 /* CardTableViewCell.swift */,
+				6F462E2120C32AAB00A7D749 /* CardTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		6FB3A17620B18028009FDF40 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				6F462DEF20C2CCC000A7D749 /* ProductDetail */,
 				6FB3A17F20B1BAA8009FDF40 /* ViewModel */,
 				6FB3A17E20B180F2009FDF40 /* Cells */,
 				3C730F6B20A85C2900C72A9D /* ProductsViewController.swift */,
@@ -299,6 +423,7 @@
 		6FB3A17720B18030009FDF40 /* Purchases */ = {
 			isa = PBXGroup;
 			children = (
+				6F462E0120C2F00F00A7D749 /* PurchasesDetail */,
 				6FB3A18E20B20FA9009FDF40 /* Cell */,
 				6FB3A18B20B20323009FDF40 /* ViewModel */,
 				3C730F7120A85F4B00C72A9D /* PurchasesViewController.swift */,
@@ -310,6 +435,7 @@
 		6FB3A17820B18037009FDF40 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
+				6F462E1A20C32A7A00A7D749 /* PaymentMethods */,
 				6FB98D0420B357B400C71D93 /* Cell */,
 				6FB98D0320B357AF00C71D93 /* ViewModel */,
 				3C730F7520A85F5E00C72A9D /* PreferencesViewController.swift */,
@@ -497,6 +623,7 @@
 			files = (
 				6FB3A19320B21E8F009FDF40 /* omnes_extralight.ttf in Resources */,
 				6FB3A19420B21E8F009FDF40 /* omnes_light.ttf in Resources */,
+				6F462E2320C32AAB00A7D749 /* CardTableViewCell.xib in Resources */,
 				6FB98D1420B37A7300C71D93 /* ProductCollectionViewCell.xib in Resources */,
 				6FB3A19520B21E8F009FDF40 /* omnes_medium.ttf in Resources */,
 				6FB3A19620B21E8F009FDF40 /* omnes_regular.ttf in Resources */,
@@ -504,12 +631,18 @@
 				3C730F5120A8587800C72A9D /* LaunchScreen.storyboard in Resources */,
 				3C730F7C20A85F6B00C72A9D /* RecipesViewController.xib in Resources */,
 				3C730F4E20A8587800C72A9D /* Assets.xcassets in Resources */,
+				6F462E1120C2F5C400A7D749 /* PurchaseHeaderTableViewCell.xib in Resources */,
 				6FB98CFB20B34B7F00C71D93 /* RecipeTableViewCell.xib in Resources */,
+				6F462E1520C2F5D700A7D749 /* PurchaseFooterTableViewCell.xib in Resources */,
 				3C730F6E20A85C2A00C72A9D /* ProductsViewController.xib in Resources */,
 				3C730F4C20A8587500C72A9D /* Main.storyboard in Resources */,
 				6FB3A17D20B180EE009FDF40 /* ProductTableViewCell.xib in Resources */,
+				6F462DFC20C2E8A700A7D749 /* FridgeViewController.xib in Resources */,
 				3C730F7420A85F4B00C72A9D /* PurchasesViewController.xib in Resources */,
+				6F462E0D20C2F5AE00A7D749 /* PurchasesDetailViewController.xib in Resources */,
+				6F462DF320C2CD4B00A7D749 /* ProductDetailViewController.xib in Resources */,
 				3C730F7820A85F5E00C72A9D /* PreferencesViewController.xib in Resources */,
+				6F462E1E20C32A9600A7D749 /* PaymentMethodsViewController.xib in Resources */,
 				6FB98D0E20B36A9500C71D93 /* RecipeDetailViewController.xib in Resources */,
 				6FB98D0820B357C700C71D93 /* PreferenceTableViewCell.xib in Resources */,
 				6FB3A19220B20FB8009FDF40 /* ShopListTableViewCell.xib in Resources */,
@@ -588,8 +721,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FB98CFF20B34C3100C71D93 /* RecipeAPI.swift in Sources */,
+				6F462E0C20C2F5AE00A7D749 /* PurchasesDetailViewController.swift in Sources */,
+				6F462E1920C3226400A7D749 /* PurchasesDetailViewModel.swift in Sources */,
+				6F462DF620C2D1BB00A7D749 /* ProductDetailViewModel.swift in Sources */,
 				3C730F5C20A859BF00C72A9D /* Coordinator.swift in Sources */,
 				6FB98D1320B37A7300C71D93 /* ProductCollectionViewCell.swift in Sources */,
+				6F462E1420C2F5D700A7D749 /* PurchaseFooterTableViewCell.swift in Sources */,
 				3CC524CD20A8861A00E0A0B2 /* ShopList.swift in Sources */,
 				6FB3A19120B20FB8009FDF40 /* ShopListTableViewCell.swift in Sources */,
 				3C730F6320A85A4600C72A9D /* PreferencesCoordinator.swift in Sources */,
@@ -603,16 +740,21 @@
 				3C730F7720A85F5E00C72A9D /* PreferencesViewController.swift in Sources */,
 				6FB98D0120B3518800C71D93 /* RecipesViewModel.swift in Sources */,
 				3C730F5A20A8592900C72A9D /* AppCoordinator.swift in Sources */,
+				6F462DFB20C2E8A700A7D749 /* FridgeViewController.swift in Sources */,
 				3C730F8720A8670E00C72A9D /* Fonts.swift in Sources */,
 				3C730F7020A85DA000C72A9D /* LocalizableString.swift in Sources */,
+				6F462DF820C2E7BD00A7D749 /* FridgeCoordinator.swift in Sources */,
 				3C730F7E20A8649200C72A9D /* Colors.swift in Sources */,
 				6FB98CFA20B34B7F00C71D93 /* RecipeTableViewCell.swift in Sources */,
 				6FB98D1020B3757200C71D93 /* ImageUtil.swift in Sources */,
 				6FB98D0A20B3595300C71D93 /* PreferencesViewModel.swift in Sources */,
+				6F462E0020C2EAC000A7D749 /* FridgeViewModel.swift in Sources */,
 				3CC524C520A87DE800E0A0B2 /* Product.swift in Sources */,
+				6F462DF220C2CD4B00A7D749 /* ProductDetailViewController.swift in Sources */,
 				6FB3A18120B1BACD009FDF40 /* ProductsViewModel.swift in Sources */,
 				3C730F4720A8587500C72A9D /* AppDelegate.swift in Sources */,
 				3C730F7320A85F4B00C72A9D /* PurchasesViewController.swift in Sources */,
+				6F462E1D20C32A9600A7D749 /* PaymentMethodsViewController.swift in Sources */,
 				6FB98D0720B357C700C71D93 /* PreferenceTableViewCell.swift in Sources */,
 				6FB98D0D20B36A9500C71D93 /* RecipeDetailViewController.swift in Sources */,
 				3C730F6020A85A3200C72A9D /* RecipesCoordinator.swift in Sources */,
@@ -622,8 +764,10 @@
 				3CC524CF20A887F000E0A0B2 /* Card.swift in Sources */,
 				6FB98CFD20B34C2600C71D93 /* RecipeNetworkService.swift in Sources */,
 				3CC524C720A8806E00E0A0B2 /* Recipe.swift in Sources */,
+				6F462E1020C2F5C400A7D749 /* PurchaseHeaderTableViewCell.swift in Sources */,
 				3C730F7B20A85F6B00C72A9D /* RecipesViewController.swift in Sources */,
 				3C730F6520A85A5C00C72A9D /* PurchasesCoordinator.swift in Sources */,
+				6F462E2220C32AAB00A7D749 /* CardTableViewCell.swift in Sources */,
 				6FB3A18A20B2014E009FDF40 /* ShoppingNetworkService.swift in Sources */,
 				6FB3A18D20B20343009FDF40 /* PurchasesViewModel.swift in Sources */,
 				3CC524C920A8828100E0A0B2 /* Market.swift in Sources */,

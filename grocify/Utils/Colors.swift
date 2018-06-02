@@ -15,6 +15,8 @@ enum Color: String {
     case vermilion = "FC4A1A"
     case sunchine = "F7B733"
     case clean = "DFDE3"
+    case greenQuantity = "008F00"
+    case redQuantity = "FF2600"
     
     var color : UIColor{
         return UIColor(self.rawValue)!

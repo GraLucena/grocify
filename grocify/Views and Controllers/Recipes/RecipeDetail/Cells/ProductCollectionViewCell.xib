@@ -18,21 +18,21 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCollectionViewCell" id="gTV-IL-0wX" customClass="ProductCollectionViewCell" customModule="grocify" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="90" height="120"/>
+            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="90" height="120"/>
+                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="MzF-ku-f1V">
-                        <rect key="frame" x="5" y="0.0" width="80" height="80"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="MzF-ku-f1V">
+                        <rect key="frame" x="15" y="0.0" width="40" height="40"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="80" id="fRz-TQ-u55"/>
-                            <constraint firstAttribute="width" constant="80" id="wAC-M2-TjX"/>
+                            <constraint firstAttribute="height" constant="40" id="fRz-TQ-u55"/>
+                            <constraint firstAttribute="width" constant="40" id="wAC-M2-TjX"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k18-4P-xVK">
-                        <rect key="frame" x="31" y="86" width="28" height="14"/>
+                        <rect key="frame" x="21" y="46" width="28" height="14"/>
                         <fontDescription key="fontDescription" name="Omnes-Regular" family="Omnes" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -46,6 +46,10 @@
                 <constraint firstItem="k18-4P-xVK" firstAttribute="top" secondItem="MzF-ku-f1V" secondAttribute="bottom" constant="6" id="uyR-5a-EKH"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="productImage" destination="MzF-ku-f1V" id="0rZ-sf-nBF"/>
+                <outlet property="productLabel" destination="k18-4P-xVK" id="7y6-jI-MKD"/>
+            </connections>
         </collectionViewCell>
     </objects>
     <resources>

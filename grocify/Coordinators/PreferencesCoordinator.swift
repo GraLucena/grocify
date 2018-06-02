@@ -29,14 +29,40 @@ class PreferencesCoordinator: Coordinator {
         rootViewController = UINavigationController(rootViewController: preferencesVC)
         coordinators = [:]
         preferencesVC.coordinator = self
+        preferencesVM.coordinatorDelegate = self
     }
     
     // MARK: - Coordinator
     func start() {}
     
+    func showPaymentMethods() {
+        let paymentMethodsVC = PaymentMethodsViewController()
+        paymentMethodsVC.hidesBottomBarWhenPushed = true
+        navigationController.pushViewController(paymentMethodsVC, animated: true)
+    }
+    
+    func showAlertsPreferences() {
+    }
+    
+    func showShoppingPreferences() {
+    }
 }
 
-// MARK: - PanicCoodinator
 extension PreferencesCoordinator: PreferencesViewControllerCoordinator {
     
+}
+
+extension PreferencesCoordinator: PreferencesViewModelCoordinatorDelegate {
+    
+    func preferencesViewModelDidSelectAlerts(_ viewModel: PreferencesViewModel) {
+        
+    }
+    
+    func preferencesViewModelDidSelectPaymentMethods(_ viewModel: PreferencesViewModel) {
+        showPaymentMethods()
+    }
+    
+    func preferencesViewModelDidSelectShoppingPreferences(_ viewModel: PreferencesViewModel) {
+        
+    }
 }

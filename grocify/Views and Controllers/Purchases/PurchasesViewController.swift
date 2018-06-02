@@ -69,9 +69,13 @@ extension PurchasesViewController : UITableViewDataSource, UITableViewDelegate{
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.selectPurchaseAt(index: indexPath.row)
+    }
 }
 
-// MARK: - ProductsViewModelViewDelegate
+// MARK: - PurchasesViewModelViewDelegate
 extension PurchasesViewController: PurchasesViewModelViewDelegate {
    
     func purchasesDidChange(viewModel: PurchasesViewModel) {

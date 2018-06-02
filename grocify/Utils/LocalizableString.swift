@@ -18,6 +18,7 @@ enum LocalizableString: String {
     case preferences = "Ajustes"
     case recipes = "Recetas"
     case purchases = "Lista de Compras"
+    case fridge = "Tu Nevera"
 
     //MARK: - Frecuency
     case monthly = "Mensual"

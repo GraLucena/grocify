@@ -14,7 +14,7 @@ protocol ProductsViewModelViewDelegate: class {
 }
 
 protocol ProductsViewModelCoordinatorDelegate: class {
-    func productsViewModel(_ viewModel: ProductsViewModel, didSelectArtistWith productId: Int)
+    func productsViewModel(_ viewModel: ProductsViewModel, didSelect product: Product)
 }
 
 protocol ProductsViewModel: class {
@@ -54,9 +54,8 @@ class ProductsAPIViewModel: ProductsViewModel {
     }
     
     func selectProductAt(index: Int) {
-        guard let product = items?[index] else { return }
-        
-        coordinatorDelegate?.productsViewModel(self, didSelectArtistWith: product.id)
+        guard let product = apiProducts?[index] else { return }
+        coordinatorDelegate?.productsViewModel(self, didSelect: product)
     }
     
     func getProducts() {

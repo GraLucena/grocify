@@ -44,7 +44,7 @@ class RecipeDetailViewController: UIViewController {
         recipeDescription.text = viewModel.recipe.description
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(ProductCollectionViewCell.self, forCellWithReuseIdentifier: "ProductCollectionViewCell")
+        collectionView.register(UINib(nibName: String(describing: ProductCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: ProductCollectionViewCell.self))
     }
 }
 
@@ -58,12 +58,14 @@ extension RecipeDetailViewController: UICollectionViewDelegate, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCollectionViewCell", for: indexPath)
         
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: ProductCollectionViewCell.self), for: indexPath)
+
         if let cell = cell as? ProductCollectionViewCell {
             let item = viewModel.ingredientAt(index: indexPath.row)
-            
-            
+            let url = URL(string: item?.image ?? "")
+            cell.productImage.loadImage(with: url!, placeholderImage: UIImage(asset: Asset.placeholder))
+            cell.productLabel.text = item?.name
         }
         
         return cell
