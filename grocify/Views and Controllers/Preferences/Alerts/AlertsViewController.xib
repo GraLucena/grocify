@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="omnes_light.ttf">
+            <string>Omnes-Light</string>
+        </array>
+        <array key="omnes_medium.ttf">
+            <string>Omnes-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertsViewController" customModule="grocify" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5g3-b3-2ZB">
+                    <rect key="frame" x="308" y="30.5" width="51" height="31"/>
+                    <color key="onTintColor" red="0.29019607843137252" green="0.74117647058823533" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </switch>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fa-e3-oJb">
+                    <rect key="frame" x="16" y="68" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="BPl-Ki-gbX"/>
+                        <constraint firstAttribute="height" constant="30" id="O6Z-YP-hUd"/>
+                    </constraints>
+                    <state key="normal" image="check"/>
+                    <state key="selected" image="check_selected"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="ewD-XB-xDB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rs7-2j-ai3">
+                    <rect key="frame" x="16" y="116" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Lo8-i4-IPU"/>
+                        <constraint firstAttribute="width" constant="30" id="xzY-9h-MjS"/>
+                    </constraints>
+                    <state key="normal" image="check"/>
+                    <state key="selected" image="check_selected"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="s4l-PK-N0g"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estados de las compras" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c23-3z-u4X">
+                    <rect key="frame" x="54" y="73.5" width="169" height="19"/>
+                    <fontDescription key="fontDescription" name="Omnes-Light" family="Omnes" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ofertas y productos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5s-1N-WSe">
+                    <rect key="frame" x="54" y="121.5" width="142.5" height="19"/>
+                    <fontDescription key="fontDescription" name="Omnes-Light" family="Omnes" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Permitir Notificaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjN-Qa-YCg">
+                    <rect key="frame" x="16" y="36" width="171.5" height="20"/>
+                    <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TmG-Z3-0QR">
+                    <rect key="frame" x="16" y="164" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Jjr-tu-1cm"/>
+                        <constraint firstAttribute="width" constant="30" id="KHE-uI-MXA"/>
+                    </constraints>
+                    <state key="normal" image="check"/>
+                    <state key="selected" image="check_selected"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="QNg-Az-28u"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Productos en la despensa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arx-MA-10e">
+                    <rect key="frame" x="54" y="170" width="184" height="19"/>
+                    <fontDescription key="fontDescription" name="Omnes-Light" family="Omnes" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="arx-MA-10e" firstAttribute="centerY" secondItem="TmG-Z3-0QR" secondAttribute="centerY" id="2Aj-se-eo2"/>
+                <constraint firstItem="2Fa-e3-oJb" firstAttribute="top" secondItem="xjN-Qa-YCg" secondAttribute="bottom" constant="12" id="2R7-lG-P1Z"/>
+                <constraint firstItem="h5s-1N-WSe" firstAttribute="leading" secondItem="rs7-2j-ai3" secondAttribute="trailing" constant="8" id="2ng-or-3Sr"/>
+                <constraint firstItem="5g3-b3-2ZB" firstAttribute="centerY" secondItem="xjN-Qa-YCg" secondAttribute="centerY" id="4tD-dF-RLu"/>
+                <constraint firstItem="rs7-2j-ai3" firstAttribute="leading" secondItem="2Fa-e3-oJb" secondAttribute="leading" id="8Cg-uG-Nlz"/>
+                <constraint firstItem="h5s-1N-WSe" firstAttribute="centerY" secondItem="rs7-2j-ai3" secondAttribute="centerY" id="DgS-VB-yul"/>
+                <constraint firstItem="arx-MA-10e" firstAttribute="leading" secondItem="TmG-Z3-0QR" secondAttribute="trailing" constant="8" id="JRg-yD-GmW"/>
+                <constraint firstItem="rs7-2j-ai3" firstAttribute="top" secondItem="2Fa-e3-oJb" secondAttribute="bottom" constant="18" id="MXA-US-Ylc"/>
+                <constraint firstItem="TmG-Z3-0QR" firstAttribute="leading" secondItem="rs7-2j-ai3" secondAttribute="leading" id="UPG-Ij-DNo"/>
+                <constraint firstItem="2Fa-e3-oJb" firstAttribute="leading" secondItem="xjN-Qa-YCg" secondAttribute="leading" id="YFK-Kx-OSi"/>
+                <constraint firstItem="c23-3z-u4X" firstAttribute="centerY" secondItem="2Fa-e3-oJb" secondAttribute="centerY" id="cPx-ke-VMO"/>
+                <constraint firstItem="TmG-Z3-0QR" firstAttribute="top" secondItem="rs7-2j-ai3" secondAttribute="bottom" constant="18" id="eQN-av-R6D"/>
+                <constraint firstItem="xjN-Qa-YCg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="fIZ-uZ-jcA"/>
+                <constraint firstItem="xjN-Qa-YCg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="gmA-2A-TSD"/>
+                <constraint firstItem="c23-3z-u4X" firstAttribute="leading" secondItem="2Fa-e3-oJb" secondAttribute="trailing" constant="8" id="wL8-xQ-7ag"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5g3-b3-2ZB" secondAttribute="trailing" constant="18" id="zVp-en-7Bz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="125.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="check" width="32" height="32"/>
+        <image name="check_selected" width="32" height="32"/>
+    </resources>
+</document>

@@ -42,6 +42,9 @@ class PreferencesCoordinator: Coordinator {
     }
     
     func showAlertsPreferences() {
+        let alertsVC = AlertsViewController()
+        alertsVC.hidesBottomBarWhenPushed = true
+        navigationController.pushViewController(alertsVC, animated: true)
     }
     
     func showShoppingPreferences() {
@@ -55,7 +58,7 @@ extension PreferencesCoordinator: PreferencesViewControllerCoordinator {
 extension PreferencesCoordinator: PreferencesViewModelCoordinatorDelegate {
     
     func preferencesViewModelDidSelectAlerts(_ viewModel: PreferencesViewModel) {
-        
+        showAlertsPreferences()
     }
     
     func preferencesViewModelDidSelectPaymentMethods(_ viewModel: PreferencesViewModel) {
